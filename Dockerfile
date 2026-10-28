@@ -9,7 +9,7 @@ RUN apt-get update \
        libfreetype6-dev \
        libzip-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install -j"$(nproc)" mysqli pdo_mysql gd mbstring zip \
+    && docker-php-ext-install -j1 mysqli pdo_mysql gd mbstring zip \
     && a2enmod rewrite headers \
     && rm -rf /var/lib/apt/lists/*
 
