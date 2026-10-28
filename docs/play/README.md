@@ -10,7 +10,7 @@ After GitHub Pages is configured to deploy from the repository's **GitHub Action
 
 ## Included playable systems
 
-- Four selectable race doctrines (Tau'ri, Asgard, Goa'uld, Replicator) — choose the race when starting a fresh save by editing the initial prompt/selection in a future update; the default prototype starts as Tau'ri.
+- Four race doctrines (Tau'ri, Asgard, Goa'uld, Replicator) with race selection from the Field Manual.
 - Naquadah, Energy, and Science economy with turn-based production.
 - Building upgrades, scaling costs, and production modifiers.
 - Six technology tracks with per-level bonuses.
