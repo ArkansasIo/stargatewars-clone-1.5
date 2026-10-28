@@ -87,7 +87,6 @@ $("#save-btn").addEventListener("click",()=>save());$("#reset-btn").addEventList
 document.addEventListener("click",e=>{const a=e.target.closest("a[href$='.md']");if(a){/* docs remain downloadable links on Pages */}});
 const oldRender=render;render=function(){oldRender();const imp=$("#import-save");if(imp)imp.addEventListener("change",()=>{});}; // keep rerenders deterministic
 if(!state.units||!state.resources||!state.buildings){state=fresh();save(true)}
-if(!state.units.jaffa&&!state.units.ja ffa){state.units.jaffa=0}
-if(!state.units.jaffa)state.units.jaffa=0;
+if(typeof state.units.jaffa!=="number")state.units.jaffa=0;
 render();
 })();
