@@ -23,7 +23,7 @@ RUN sed -ri 's!/var/www/html!$APACHE_DOCUMENT_ROOT!g' /etc/apache2/sites-availab
 COPY --chown=www-data:www-data . /var/www/html/
 
 # Health endpoint confirms Apache/PHP is responding; it does not query MySQL.
-RUN printf '%s\\n' '<?php http_response_code(200); header("Content-Type: text/plain"); echo "ok";' \
+RUN printf '%s\n' '<?php http_response_code(200); header("Content-Type: text/plain"); echo "ok";' \
       > /var/www/html/healthz.php \
     && chown www-data:www-data /var/www/html/healthz.php
 
