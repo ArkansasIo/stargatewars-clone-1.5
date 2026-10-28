@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Universe Civilization: Empire at Wars — Stargate Wars strategy game project, documentation, and deployment resources.">
+  <title>Stargate Wars | Universe Civilization</title>
+  <style>
+    :root{color-scheme:dark;--bg:#07111f;--panel:#0d1b2c;--line:#203b55;--text:#e8f3ff;--muted:#a8bdd0;--cyan:#53d8f3;--gold:#e6bd72}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#12304b 0,transparent 44%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(1100px,calc(100% - 32px));margin:auto}
+    header{border-bottom:1px solid var(--line);background:#07111fd9}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;letter-spacing:.08em;text-transform:uppercase}.brand span{color:var(--cyan)}.nav a{font-size:.92rem}
+    .hero{padding:84px 0 64px}.eyebrow{color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+    h1{font-size:clamp(2.5rem,7vw,5.5rem);line-height:1.02;max-width:850px;margin:18px 0}h1 span{color:var(--cyan)}
+    .lead{max-width:720px;color:var(--muted);font-size:1.15rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .button{display:inline-block;padding:12px 18px;border:1px solid var(--cyan);border-radius:8px;font-weight:700}.primary{background:var(--cyan);color:#04111d}.secondary{border-color:var(--line);color:var(--text)}
+    .notice{border:1px solid #80663c;background:#2b2418;padding:16px 18px;border-radius:10px;margin:0 0 42px;color:#f2dfb8}
+    section{padding:30px 0 58px}h2{font-size:1.8rem;margin:0 0 18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .card{background:linear-gradient(145deg,#10243a,#0a1726);border:1px solid var(--line);border-radius:12px;padding:22px}.card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0 0 14px}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.9rem}
+    @media(max-width:600px){.nav{align-items:flex-start;flex-direction:column;padding:16px 0;gap:8px}.hero{padding-top:54px}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap nav"><div class="brand"><span>SGW</span> · Universe Civilization</div><nav aria-label="Main navigation"><a href="#systems">Systems</a> &nbsp;·&nbsp; <a href="#docs">Documentation</a> &nbsp;·&nbsp; <a href="https://github.com/ArkansasIo/stargatewars-clone-1.5">GitHub</a></nav></div></header>
+  <main>
+    <section class="hero wrap">
+      <div class="eyebrow">Persistent universe · Strategy · Exploration</div>
+      <h1>Build your civilization.<br><span>Command the galaxy.</span></h1>
+      <p class="lead">Universe Civilization: Empire at Wars is a browser-based strategy game project featuring world development, orbital infrastructure, fleets, turn-based battles, covert operations, and a persistent game economy.</p>
+      <div class="actions"><a class="button primary" href="https://github.com/ArkansasIo/stargatewars-clone-1.5">Explore the source</a><a class="button secondary" href="PLAYER_GUIDE.md">Read the player guide</a></div>
+    </section>
+    <div class="wrap"><div class="notice"><strong>Hosting note:</strong> This GitHub Pages site is a static project portal and documentation site. GitHub Pages cannot run the PHP game server or connect to its MySQL database. Deploy the playable application separately using the documented container setup.</div></div>
+    <section id="systems" class="wrap"><h2>Command systems</h2><div class="grid">
+      <article class="card"><h3>🌌 Universe exploration</h3><p>Discover procedural worlds, moons, planetary classes, biomes, and exploration data.</p></article>
+      <article class="card"><h3>🏗️ Civilization & economy</h3><p>Develop infrastructure, manage resources, and balance world and orbital power.</p></article>
+      <article class="card"><h3>🛡️ Fleets & combat</h3><p>Configure military forces and engage in tactical battles across planetary and orbital theaters.</p></article>
+      <article class="card"><h3>🛰️ Covert operations</h3><p>Use sabotage, infiltration, detection, and counterintelligence systems.</p></article>
+    </div></section>
+    <section id="docs" class="wrap"><h2>Project resources</h2><div class="grid">
+      <article class="card"><h3>Player guide</h3><p>Learn the game systems, economy, combat, and communications.</p><a href="PLAYER_GUIDE.md">Open player guide →</a></article>
+      <article class="card"><h3>Systems reference</h3><p>Review the architecture, modules, database systems, and current limitations.</p><a href="SYSTEMS_REFERENCE.md">Open systems reference →</a></article>
+      <article class="card"><h3>Game design document</h3><p>Explore the game vision, mechanics, progression, and roadmap.</p><a href="../GAME_DESIGN_DOCUMENT.md">Open GDD →</a></article>
+      <article class="card"><h3>Shoal deployment</h3><p>Set up the PHP container, persistent database, environment variables, and gateway.</p><a href="SHOAL_DEPLOYMENT.md">Open deployment guide →</a></article>
+      <article class="card"><h3>Backend setup</h3><p>Review database initialization and migration instructions.</p><a href="../BACKEND_SETUP.md">Open backend setup →</a></article>
+      <article class="card"><h3>Source repository</h3><p>Browse code, report issues, and follow development.</p><a href="https://github.com/ArkansasIo/stargatewars-clone-1.5">Open GitHub repository →</a></article>
+    </div></section>
+  </main>
+  <footer><div class="wrap">Universe Civilization: Empire at Wars · Open-source project portal · <a href="https://github.com/ArkansasIo/stargatewars-clone-1.5">ArkansasIo on GitHub</a></div></footer>
+</body>
+</html>
