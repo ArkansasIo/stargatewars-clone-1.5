@@ -1,0 +1,11 @@
+.git
+.github
+.env
+.env.*
+!.env.example
+config.local.php
+backups/
+exports/
+*.log
+.DS_Store
+Thumbs.db
