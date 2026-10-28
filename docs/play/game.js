@@ -33,7 +33,7 @@ const WORLDS=[
 {name:"Tollana",type:"Advanced civilization",danger:"High",reward:610,desc:"Powerful defenses; diplomacy is recommended."},
 {name:"Hala",type:"Remote world",danger:"Moderate",reward:400,desc:"Long-range gate coordinates recovered."},
 {name:"Abydos",type:"Desert",danger:"Low",reward:260,desc:"Archaeological site with ancient gate records."}];
-const initial=()=>({name:"Commander",race:"Tau'ri",turn:1,created:Date.now(),resources:{naquadah:1800,energy:900,science:450},buildings:{mine:1,power:1,lab:1,barracks:1,shipyard:0,gate:0},tech:{},units:{j af fa:0},worlds:[],missions:[],logs:[],alliance:"Unaffiliated",rank:"Initiate",score:0});
+const initial=()=>({name:"Commander",race:"Tau'ri",turn:1,created:Date.now(),resources:{naquadah:1800,energy:900,science:450},buildings:{mine:1,power:1,lab:1,barracks:1,shipyard:0,gate:0},tech:{},units:{jaffa:0,sgteam:0,alkesh:0,ha_tak:0,asgard:0},worlds:[],missions:[],logs:[],alliance:"Unaffiliated",rank:"Initiate",score:0});
 function fresh(){const s=initial();s.units={jaffa:12,sgteam:2,alkesh:1,ha_tak:0,asgard:0};s.logs=[{turn:1,text:"Command authority established. Welcome to the frontier, Commander."}];return s}
 let state;try{state=JSON.parse(localStorage.getItem(KEY))||fresh()}catch{state=fresh()}
 let page="overview";
