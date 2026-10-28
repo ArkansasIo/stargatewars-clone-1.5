@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07111f">
+<meta name="description" content="Play the Stargate Wars browser strategy prototype. Build your empire, research technology, recruit units, and command fleets.">
+<title>Stargate Wars — Command Interface</title><link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div class="shell">
+<header class="topbar"><a class="brand" href="../index.html"><span class="sigil">SG</span><span>STARGATE <b>WARS</b><small>UNIVERSE COMMAND NETWORK</small></span></a><div class="status"><span class="live-dot"></span> LOCAL SIMULATION <span id="turn-clock">TURN 001</span><button id="save-btn" class="small">SAVE</button><button id="reset-btn" class="small danger">RESET</button></div></header>
+<div class="resource-strip" id="resources"></div>
+<div class="layout"><aside class="sidebar"><div class="commander"><div class="avatar">⌬</div><div><strong id="player-name">Commander</strong><small id="player-race">TAU'RI COMMAND</small></div></div><div class="nav-label">COMMAND DECK</div><nav id="nav">
+<button class="nav-item active" data-page="overview">▦ <span>Overview</span></button><button class="nav-item" data-page="planet">◉ <span>Planet & Buildings</span></button><button class="nav-item" data-page="research">⌘ <span>Research Lab</span></button><button class="nav-item" data-page="military">✦ <span>Military & Units</span></button><button class="nav-item" data-page="fleet">➤ <span>Fleet Operations</span></button><button class="nav-item" data-page="galaxy">✺ <span>Galaxy Map</span></button><button class="nav-item" data-page="stargate">◎ <span>Stargate Network</span></button><button class="nav-item" data-page="intelligence">⌁ <span>Intelligence</span></button><button class="nav-item" data-page="alliance">♧ <span>Alliance</span></button><button class="nav-item" data-page="rankings">☷ <span>Rankings</span></button><button class="nav-item" data-page="codex">▤ <span>Field Manual</span></button>
+</nav><div class="side-bottom"><small>BUILD 1.5 · PAGES EDITION</small><a href="../index.html">← Project portal</a></div></aside>
+<main class="main"><div class="page-head"><div><div class="eyebrow" id="eyebrow">STRATEGIC COMMAND</div><h1 id="page-title">Empire Overview</h1><p id="page-subtitle">Your civilization, summarized across the known galaxy.</p></div><div class="turn-chip"><small>SIMULATION TURN</small><strong id="turn-number">001</strong><small>30 MIN / TURN</small></div></div><div id="alerts"></div><section id="page-content"></section><footer>STARGATE WARS · Browser simulation saves locally on this device. <span>GitHub Pages build · v1.5</span></footer></main></div>
+</div><div id="toast" role="status" aria-live="polite"></div><script src="game.js"></script>
+</body></html>
